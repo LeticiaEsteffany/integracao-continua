@@ -23,6 +23,7 @@ jobs:
           
     build-segunda:
       runs-on: ubuntu-latest
+      needs: [build]
       steps:
         - uses: actions/checkout@v3
         - name: Set up JDK 11
